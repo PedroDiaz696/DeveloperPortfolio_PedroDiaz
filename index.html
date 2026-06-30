@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Pedro Antonio Díaz Vergel, desarrollador de software en formación enfocado en soluciones web modernas, funcionales y bien estructuradas.">
+    <meta name="keywords" content="Pedro Antonio Díaz Vergel, desarrollador de software, frontend developer, HTML, CSS, JavaScript, Python, Campuslands, portafolio">
+    <meta name="author" content="Pedro Antonio Díaz Vergel">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pedrodiaz696.github.io/DeveloperPortfolio_PedroDiaz/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pedro Antonio Díaz Vergel | Desarrollador de Software en Formación">
+    <meta property="og:description" content="Portafolio enfocado en fundamentos de desarrollo web, interfaces limpias y proyectos prácticos de software.">
+    <meta property="og:url" content="https://pedrodiaz696.github.io/DeveloperPortfolio_PedroDiaz/">
+    <meta property="og:image" content="ASSETS/IMG/image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedro Antonio Díaz Vergel | Desarrollador de Software en Formación">
+    <meta name="twitter:description" content="Portafolio moderno desarrollado con HTML, CSS y JavaScript.">
+    <meta name="twitter:image" content="ASSETS/IMG/image.png">
+
+    <title>Pedro Antonio Díaz Vergel | Desarrollador de Software en Formación</title>
+    <link rel="icon" href="ASSETS/IMG/image.png" type="image/png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+        <nav class="nav container" aria-label="Navegación principal">
+            <a class="nav__brand" href="#home" aria-label="Inicio de Pedro Antonio Díaz Vergel">
+                <span class="nav__mark" aria-hidden="true">PD</span>
+                <span>Pedro Díaz</span>
+            </a>
+
+            <button class="nav__toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav__menu" id="primary-menu" data-nav-menu>
+                <li><a class="nav__link" href="#about">Sobre mí</a></li>
+                <li><a class="nav__link" href="#stack">Tecnologías</a></li>
+                <li><a class="nav__link" href="#projects">Proyectos</a></li>
+                <li><a class="nav__link" href="#process">Proceso</a></li>
+                <li><a class="nav__link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero section" id="home" aria-labelledby="hero-title">
+            <div class="hero__inner container">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Desarrollador de Software en Formación</p>
+                    <h1 id="hero-title">Pedro Antonio Díaz Vergel</h1>
+                    <p class="hero__description">
+                        Construyo soluciones web modernas y funcionales mientras fortalezco mis fundamentos en desarrollo de software, interfaces limpias y buenas prácticas de ingeniería.
+                    </p>
+
+                    <div class="hero__actions" aria-label="Acciones principales">
+                        <a class="button button--primary" href="#projects">
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5v-13Zm2 .5v12h12V6H6Zm2 2h8v2H8V8Zm0 4h8v2H8v-2Z"/>
+                            </svg>
+                            Ver proyectos
+                        </a>
+                        <a class="button button--secondary" href="https://drive.google.com/file/d/1LIQYbavBc0fgmu4pgg3HPpiCJl_4xFqM/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Descargar CV">
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M11 4h2v8.17l3.59-3.58L18 10l-6 6-6-6 1.41-1.41L11 12.17V4ZM5 18h14v2H5v-2Z"/>
+                            </svg>
+                            Descargar CV
+                        </a>
+                    </div>
+
+                    <div class="hero__links" aria-label="Enlaces profesionales">
+                        <a href="https://github.com/PedroDiaz696" target="_blank" rel="noopener noreferrer">
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49v-1.73c-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.35 9.35 0 0 1 12 7c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92v2.85c0 .27.18.59.69.49A10.13 10.13 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__visual reveal">
+                    <div class="profile-card" aria-label="Resumen del perfil">
+                        <img src="ASSETS/IMG/image.png" alt="Retrato de Pedro Antonio Díaz Vergel" width="520" height="390">
+                        <div class="profile-card__info">
+                            <span>Estudiante en Campuslands</span>
+                            <strong>Fundamentos frontend y lógica de software</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="section__header container reveal">
+                <p class="eyebrow">Sobre mí</p>
+                <h2 id="about-title">Aprendizaje constante con estándares profesionales.</h2>
+            </div>
+            <div class="about container">
+                <article class="about__panel reveal">
+                    <p>
+                        Soy estudiante de Desarrollo de Software en Campuslands, con una base sólida en Python, JavaScript, HTML, CSS, Git, GitHub y resolución práctica de problemas.
+                    </p>
+                    <p>
+                        Trabajo con claridad, consistencia y mejora continua. Me interesa convertir requerimientos en interfaces estructuradas, código legible y proyectos que puedan crecer sin volverse difíciles de mantener.
+                    </p>
+                    <p>
+                        Actualmente profundizo en inteligencia artificial, prompt engineering, desarrollo web y buenas prácticas mientras me preparo para prácticas profesionales y mi primera oportunidad laboral en tecnología.
+                    </p>
+                </article>
+                <aside class="about__aside reveal" aria-label="Enfoque actual">
+                    <span class="about__label">Enfoque actual</span>
+                    <ul class="check-list">
+                        <li>Interfaces web modernas</li>
+                        <li>JavaScript claro y funcional</li>
+                        <li>Disciplina con control de versiones</li>
+                        <li>Uso responsable de herramientas de IA</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section--muted" id="stack" aria-labelledby="stack-title">
+            <div class="section__header container reveal">
+                <p class="eyebrow">Tecnologías</p>
+                <h2 id="stack-title">Herramientas y tecnologías que uso en proyectos reales.</h2>
+            </div>
+            <div class="stack-grid container">
+                <article class="stack-card reveal"><span class="icon icon--python" aria-hidden="true"></span><h3>Python</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--js" aria-hidden="true"></span><h3>JavaScript</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--html" aria-hidden="true"></span><h3>HTML5</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--css" aria-hidden="true"></span><h3>CSS3</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--git" aria-hidden="true"></span><h3>Git</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--github" aria-hidden="true"></span><h3>GitHub</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--json" aria-hidden="true"></span><h3>JSON</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--storage" aria-hidden="true"></span><h3>LocalStorage</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--code" aria-hidden="true"></span><h3>VS Code</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--scrum" aria-hidden="true"></span><h3>Scrum</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--ai" aria-hidden="true"></span><h3>Inteligencia Artificial</h3></article>
+                <article class="stack-card reveal"><span class="icon icon--prompt" aria-hidden="true"></span><h3>Prompt Engineering</h3></article>
+            </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="section__header container reveal">
+                <p class="eyebrow">Proyectos</p>
+                <h2 id="projects-title">Trabajo seleccionado con alcance práctico y funcionalidad clara.</h2>
+            </div>
+
+            <div class="projects container">
+                <article class="project-card project-card--featured reveal">
+                    <div class="project-card__content">
+                        <span class="project-card__label">Proyecto principal</span>
+                        <h3>Hotel Rincón</h3>
+                        <p>
+                            Prototipo de plataforma de reservas enfocado en flujos principales de hotelería, acceso de usuarios, exploración de habitaciones y gestión administrativa con persistencia en el navegador.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Sistema de reservas</li>
+                            <li>Carrusel de habitaciones</li>
+                            <li>Registro e inicio de sesión</li>
+                            <li>Panel administrador</li>
+                            <li>Persistencia con LocalStorage</li>
+                        </ul>
+                    </div>
+                    <div class="project-card__meta">
+                        <div class="tags" aria-label="Tecnologías utilizadas">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a class="button button--small button--primary" href="https://github.com/PedroDiaz696" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-card__content">
+                        <h3>Catálogo E-commerce</h3>
+                        <p>
+                            Catálogo de productos responsive con un sistema visual limpio, presentación organizada y una estructura pensada para explorar contenido con facilidad.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Interfaz responsive</li>
+                            <li>Catálogo de productos</li>
+                            <li>Diseño visual limpio</li>
+                        </ul>
+                    </div>
+                    <div class="project-card__meta">
+                        <div class="tags" aria-label="Tecnologías utilizadas">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a class="button button--small button--primary" href="https://github.com/PedroDiaz696" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-card__content">
+                        <h3>Sistema de Gestión Académica</h3>
+                        <p>
+                            Sistema de gestión académica en consola, construido con datos estructurados, persistencia en JSON y flujos administrativos.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Administración de estudiantes</li>
+                            <li>Registro de instructores</li>
+                            <li>Evaluaciones</li>
+                            <li>Inscripciones</li>
+                        </ul>
+                    </div>
+                    <div class="project-card__meta">
+                        <div class="tags" aria-label="Tecnologías utilizadas">
+                            <span>Python</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-card__actions">
+                            <a class="button button--small button--primary" href="https://github.com/PedroDiaz696" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--muted" id="process" aria-labelledby="process-title">
+            <div class="section__header container reveal">
+                <p class="eyebrow">Proceso de Desarrollo</p>
+                <h2 id="process-title">Un flujo práctico para construir con intención.</h2>
+            </div>
+            <div class="process container" aria-label="Pasos del proceso de desarrollo">
+                <article class="process__step reveal"><span>01</span><h3>Analizar</h3><p>Entender el objetivo, las restricciones y la experiencia esperada antes de escribir código.</p></article>
+                <article class="process__step reveal"><span>02</span><h3>Diseñar</h3><p>Definir estructura, jerarquía y patrones de interacción alineados con el propósito del proyecto.</p></article>
+                <article class="process__step reveal"><span>03</span><h3>Desarrollar</h3><p>Construir interfaces legibles y modulares con marcado semántico y estilos mantenibles.</p></article>
+                <article class="process__step reveal"><span>04</span><h3>Probar</h3><p>Revisar comportamiento, accesibilidad, responsive y casos límite en distintos tamaños de pantalla.</p></article>
+                <article class="process__step reveal"><span>05</span><h3>Optimizar</h3><p>Reducir fricción, eliminar código innecesario y mejorar rendimiento donde aporta valor.</p></article>
+            </div>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="section__header container reveal">
+                <p class="eyebrow">Habilidades Profesionales</p>
+                <h2 id="skills-title">Habilidades humanas que respaldan un trabajo confiable.</h2>
+            </div>
+            <div class="skills-grid container">
+                <article class="skill-card reveal"><h3>Resolución de Problemas</h3><p>Analizo requerimientos y busco soluciones prácticas, claras y mantenibles.</p></article>
+                <article class="skill-card reveal"><h3>Comunicación</h3><p>Explico avances, decisiones y bloqueos de forma ordenada.</p></article>
+                <article class="skill-card reveal"><h3>Trabajo en Equipo</h3><p>Respeto estándares compartidos y flujos de colaboración.</p></article>
+                <article class="skill-card reveal"><h3>Adaptabilidad</h3><p>Aprendo con rapidez cuando un proyecto requiere nuevas herramientas o enfoques.</p></article>
+                <article class="skill-card reveal"><h3>Pensamiento Crítico</h3><p>Reviso supuestos y decisiones antes de implementar.</p></article>
+                <article class="skill-card reveal"><h3>Aprendizaje Continuo</h3><p>Mejoro mediante práctica, retroalimentación, documentación e iteración.</p></article>
+                <article class="skill-card reveal"><h3>Responsabilidad</h3><p>Asumo mis tareas con seriedad y hago seguimiento hasta completarlas.</p></article>
+            </div>
+        </section>
+
+        <section class="statistics section--compact" aria-labelledby="stats-title">
+            <h2 class="sr-only" id="stats-title">Estadísticas del portafolio</h2>
+            <div class="stats-grid container">
+                <article class="stat reveal"><strong>3+</strong><span>Proyectos</span></article>
+                <article class="stat reveal"><strong>10+</strong><span>Tecnologías</span></article>
+                <article class="stat reveal"><strong>100%</strong><span>Responsive</span></article>
+                <article class="stat reveal"><strong>2026</strong><span>Desarrollador</span></article>
+            </div>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="contact container reveal">
+                <div>
+                    <p class="eyebrow">Contacto</p>
+                    <h2 id="contact-title">Abierto a aprender, colaborar y asumir primeras oportunidades profesionales.</h2>
+                    <p>
+                        Busco prácticas, oportunidades junior y proyectos donde pueda aportar con disciplina mientras continúo creciendo como desarrollador de software.
+                    </p>
+                </div>
+                <address class="contact__links">
+                    <a href="https://github.com/PedroDiaz696" target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span>
+                        <strong>github.com/PedroDiaz696</strong>
+                    </a>
+                    <a href="mailto:pedrodiazz272@gmail.com">
+                        <span>Correo</span>
+                        <strong>pedrodiazz272@gmail.com</strong>
+                    </a>
+                    <a href="#" aria-label="Perfil de LinkedIn pendiente">
+                        <span>LinkedIn</span>
+                        <strong>Perfil próximamente</strong>
+                    </a>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span data-year>2026</span> Pedro Antonio Díaz Vergel</p>
+            <p>Desarrollado con HTML, CSS y JavaScript.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Volver arriba" data-back-to-top>
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 5 5 12l1.41 1.41L11 8.83V20h2V8.83l4.59 4.58L19 12l-7-7Z"/>
+        </svg>
+    </button>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
