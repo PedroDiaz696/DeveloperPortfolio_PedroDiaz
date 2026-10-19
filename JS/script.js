@@ -73,6 +73,16 @@ const revealObserver = new IntersectionObserver(
             }
 
             entry.target.classList.add("is-visible");
+            const clearDelay = (event) => {
+                if (event.target !== entry.target) {
+                    return;
+                }
+
+                entry.target.style.transitionDelay = "";
+                entry.target.removeEventListener("transitionend", clearDelay);
+            };
+
+            entry.target.addEventListener("transitionend", clearDelay);
             observer.unobserve(entry.target);
         });
     },
@@ -82,7 +92,11 @@ const revealObserver = new IntersectionObserver(
     }
 );
 
-revealItems.forEach((item) => revealObserver.observe(item));
+revealItems.forEach((item) => {
+    const siblings = [...item.parentElement.children].filter((child) => child.classList.contains("reveal"));
+    item.style.transitionDelay = `${siblings.indexOf(item) * 90}ms`;
+    revealObserver.observe(item);
+});
 
 year.textContent = new Date().getFullYear();
 updateHeader();

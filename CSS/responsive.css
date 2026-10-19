@@ -14,22 +14,20 @@
         width: min(100%, 420px);
     }
 
-    .stack-grid,
-    .skills-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .process {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .project-card {
+    .project-card--featured {
         grid-template-columns: 1fr;
     }
 
-    .project-card__meta {
-        flex-direction: row;
-        align-items: flex-end;
+    .project-card--featured .project-card__cover {
+        border-right: 0;
+        border-bottom: 1px solid var(--color-line);
+    }
+
+    .project-card--featured .project-card__cover::after {
+        inset: auto 0 -1px;
+        width: auto;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--cover-accent), transparent);
     }
 }
 
@@ -92,13 +90,8 @@
     }
 
     .stack-grid,
-    .skills-grid,
-    .stats-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .process {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .projects__grid {
+        grid-template-columns: 1fr;
     }
 
     .site-footer .container {
@@ -128,8 +121,7 @@
         font-size: 1rem;
     }
 
-    .hero__actions,
-    .project-card__actions {
+    .hero__actions {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -144,30 +136,19 @@
 
     .about__panel,
     .about__aside,
-    .project-card,
-    .project-card--featured,
-    .contact {
+    .project-card__body,
+    .project-card--featured .project-card__body,
+    .contact,
+    .stack-group {
         padding: 22px;
     }
 
-    .stack-grid,
-    .skills-grid,
-    .stats-grid,
-    .process {
+    .project-card--featured .feature-list {
         grid-template-columns: 1fr;
     }
 
-    .project-card__meta {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .process__step {
-        min-height: auto;
-    }
-
-    .stat {
-        min-height: 128px;
+    .project-card__cover {
+        min-height: 150px;
     }
 
     .back-to-top {
@@ -192,11 +173,10 @@
 
     .about__panel,
     .about__aside,
-    .project-card,
-    .project-card--featured,
+    .project-card__body,
+    .project-card--featured .project-card__body,
     .contact,
-    .skill-card,
-    .process__step {
+    .stack-group {
         padding: 18px;
     }
 }
